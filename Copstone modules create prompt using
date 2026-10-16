@@ -1,0 +1,33 @@
+Act as a professional web developer and create a working demo website based strictly on the modules in my uploaded PPT.
+Objective
+Demonstrate how the website works, module by module, so I can explain it clearly during my college presentation.
+Requirements
+
+1. Analyze my PPT first. Identify the project title, module names, descriptions, and sequence.
+2. Home page: Display the project title, a short introduction, and a “Start Demo” button.
+3. Module navigation: Display only the modules mentioned in my PPT in the same order.
+4. Working module demos: Each module must have a simple, interactive demonstration showing how that module works.
+5. User interaction: Use sample data, forms, buttons, search boxes, or simulated results wherever relevant to demonstrate the module.
+6. Module explanation: For each module, show:
+   * Module name
+   * Purpose
+   * How it works
+   * A small interactive demonstration
+   * Expected output or result
+7. Navigation controls: Include Previous Module, Next Module, and Back to Home.
+8. Design: Use a clean, modern, professional, responsive interface suitable for a college project presentation.
+9. Technology: HTML5, CSS3, and JavaScript, with separate `index.html`, `style.css`, and `script.js` files.
+10. Demo only: Use sample data and simulated processing wherever necessary. Clearly identify simulated features and do not claim that a real backend or database exists.
+
+Strict limitations
+
+* Include only the modules present in my PPT.
+* Preserve their original names and sequence.
+* Do not invent additional modules.
+* Do not build unnecessary login systems, dashboards, payment systems, or other features unless they are explicitly included in the PPT.
+* Do not create a full production application.
+* Keep the website simple enough to run in VS Code and demonstrate in front of faculty.
+
+Final deliverables
+Provide the complete working source code, clear instructions to run it in VS Code, and a short presentation guide explaining how to demonstrate each module step by step.
+Most important: This must be an interactive demo of how the modules work, not merely a static website displaying PPT text. Use the uploaded PPT as the only source for the project's modules and functionality. based module creat webstie for presntions
