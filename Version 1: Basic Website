@@ -1,0 +1,266 @@
+# Universal Website Development Prompt — Version 1 (Basic Frontend)
+
+Act as a professional frontend web developer, UI/UX designer, and beginner-friendly technical instructor. Build a complete, responsive, functional website based on the project details below.
+
+## 1. Project Details
+
+- Project Name: [Enter Project Name]
+- Project Type: [Enter Project Type]
+- Project Concept: [Explain your project idea]
+- Main Objective: [Explain the problem the website solves]
+- Target Users: [Students / Customers / Admins / Staff / Other]
+- Required Modules: [List the main modules]
+- Additional Requirements: [Enter any extra requirements]
+
+If any non-essential information is missing, make reasonable assumptions and explain them. Ask a question only when an essential decision prevents implementation.
+
+## 2. Technology Stack
+
+Use only:
+
+- HTML5 for website structure.
+- CSS3 for styling, layouts, animations, and responsive design.
+- Vanilla JavaScript for interactions and business logic.
+- Browser localStorage for demo data persistence.
+- Optional external libraries only when genuinely necessary.
+
+Do not use React, Angular, Vue, or a backend framework in this version.
+
+Organize the project into:
+
+- index.html
+- style.css
+- script.js
+- assets/ for images and other static resources, if needed.
+
+Additional HTML, CSS, or JavaScript files may be created when necessary for a clean structure.
+
+## 3. Design and User Experience
+
+Create a modern, professional, attractive, and easy-to-use interface.
+
+Requirements:
+
+- Responsive design for desktop, tablet, and mobile.
+- Consistent colors, typography, spacing, and component styles.
+- Clear navigation and meaningful page headings.
+- Cards, tables, forms, buttons, dialogs, and status indicators where appropriate.
+- Search, filters, sorting, and pagination when relevant.
+- Loading, empty, success, and error states.
+- Accessible labels, keyboard navigation, and readable contrast.
+- Smooth but lightweight animations.
+- No broken links, dead buttons, or unnecessary decorative elements.
+
+Choose a visual style appropriate to the project rather than forcing every project into the same design.
+
+## 4. Project Analysis
+
+Before implementation:
+
+1. Understand the project objective.
+2. Identify the main user roles.
+3. Identify the required pages and modules.
+4. Determine how users move between modules.
+5. Define the core workflows and business rules.
+6. Identify the data that must be stored.
+7. Plan the file structure and implementation order.
+
+Create only the modules relevant to the supplied project concept.
+
+## 5. Functional Modules
+
+Implement the following modules where applicable to the project.
+
+### A. Home Page
+- Display the project name, introduction, and key features.
+- Provide clear navigation to important modules.
+- Include suitable calls to action.
+- Display relevant summaries or announcements when useful.
+
+### B. User Registration and Login
+- Provide registration and login forms if user accounts are required.
+- Validate required fields and input formats.
+- Show understandable success and error messages.
+- Provide logout and role-based demo navigation when relevant.
+
+Important: Frontend-only login is for demonstration, not secure authentication. Do not claim that client-side passwords or role checks provide production-grade security.
+
+### C. Main Business Modules
+Create the actual modules required by the project.
+
+Examples:
+
+- Library: book search, borrowing, returns, and history.
+- Bus booking: route search, seat selection, passenger details, and booking history.
+- Hotel booking: room search, availability, booking details, and cancellation.
+- E-commerce: products, cart, orders, and product filters.
+- College portal: student information, attendance, results, and announcements.
+
+Each module must have working interactions and appropriate validation.
+
+### D. Admin Dashboard
+Include an admin dashboard if the project requires administration.
+
+Possible functions:
+
+- Add, view, edit, and delete records.
+- Manage users and project resources.
+- View relevant transactions or activities.
+- Search, filter, and sort records.
+- Display summary statistics.
+- Export suitable data to CSV when useful.
+
+Clearly label any demo-only admin access.
+
+### E. Additional Features
+Implement relevant features such as:
+
+- Notifications.
+- Reviews and feedback.
+- Favorites or saved items.
+- Reports.
+- Booking or transaction history.
+- Profile settings.
+- Help or FAQ sections.
+
+Do not add unrelated features merely to make the project look bigger.
+
+## 6. Data Management
+
+Use localStorage to persist appropriate demo data between browser sessions.
+
+Requirements:
+
+- Define a clear data structure.
+- Provide sensible initial sample data.
+- Update the interface after data changes.
+- Support create, read, update, and delete operations where needed.
+- Handle missing, invalid, or corrupted stored data gracefully.
+- Include a way to reset demo data when appropriate.
+- Avoid unnecessary duplicate records.
+- Maintain consistency between related records.
+
+Important limitations:
+
+- localStorage is browser-specific and is not a shared database.
+- Data may be modified by users through browser tools.
+- This implementation does not provide reliable multi-user synchronization.
+- Do not store real passwords, payment card details, or sensitive personal information.
+
+## 7. Business Logic and Validation
+
+Implement the actual rules for the project.
+
+Examples:
+
+- Prevent booking unavailable seats.
+- Prevent borrowing unavailable books.
+- Prevent hotel reservations for unavailable rooms.
+- Calculate totals and applicable demo fees correctly.
+- Validate required dates, quantities, and user details.
+- Prevent invalid duplicate operations.
+- Update related records after a cancellation or return.
+- Display clear explanations when an operation is rejected.
+
+Avoid hardcoded results that ignore user input.
+
+## 8. Payment and External Services
+
+If the project needs payments, maps, email, SMS, or other external integrations:
+
+- Build a clear demonstration workflow when real integrations are not available.
+- Label simulated payments and notifications explicitly.
+- Never claim a transaction was processed by a real payment gateway unless the integration actually exists.
+- Never collect or store real card information in a frontend-only demo.
+- Explain the additional backend or provider setup needed for real integrations.
+
+## 9. AI Module Instructions
+
+If the project contains an AI module, implement and explain it according to the requirements below.
+
+### Understand the AI Feature
+Identify:
+
+- AI module name.
+- Purpose and problem it solves.
+- Required user inputs.
+- Processing logic.
+- Expected output.
+- Technology or algorithm used.
+
+### Choose the Correct Implementation
+Select the simplest suitable option:
+
+**Level A — Simulated Demo**
+- Use predefined sample results to demonstrate the workflow.
+- Clearly label results as simulated.
+
+**Level B — Rule-Based Logic**
+- Use JavaScript rules, filtering, scoring, or ranking.
+- Explain that this is rule-based logic, not a real AI model.
+
+**Level C — Real AI Integration**
+- Use a suitable real AI model or API when required.
+- Never expose secret API keys in frontend JavaScript.
+- Explain the backend requirements for secure API access.
+
+Do not claim that real AI is running if the feature uses sample data or ordinary conditional logic.
+
+### AI Workflow
+For every AI module, explain:
+
+1. Input.
+2. Processing.
+3. Output.
+4. Technology used.
+5. Example input and output.
+6. Limitations and possible errors.
+
+Provide loading indicators, input validation, and understandable error messages where applicable.
+
+## 10. Testing
+
+Test the website for:
+
+- Navigation and links.
+- Form validation.
+- Main user workflows.
+- Create, edit, and delete operations.
+- Search, filters, and sorting.
+- Data persistence after page refresh.
+- Invalid and missing inputs.
+- Empty states and error handling.
+- Mobile and desktop layouts.
+- AI demo or integration behavior, if included.
+
+Fix identified issues before presenting the final result.
+
+Do not claim a test passed unless it was actually performed.
+
+## 11. Final Deliverables
+
+Provide:
+
+1. Complete source code.
+2. All required HTML, CSS, and JavaScript files.
+3. Project folder structure.
+4. Instructions to run the website locally.
+5. Sample data and reset instructions.
+6. List of implemented modules.
+7. Testing results and known limitations.
+8. Instructions for adding future modules.
+9. A simple explanation of how each major module works.
+
+If you have access to a coding environment, create the actual project files and run the available checks rather than returning only a plan.
+
+## 12. Final Quality Requirements
+
+- Prioritize working functionality over visual decoration.
+- Keep the code readable and suitable for beginners.
+- Reuse components and functions where practical.
+- Avoid unnecessary dependencies.
+- Do not leave unfinished buttons or fake functionality without clear labels.
+- Preserve existing working features when modifying the project.
+- State which features are complete, simulated, or not implemented.
+
+Start by analyzing the project requirements, then build and test the website module by module.
