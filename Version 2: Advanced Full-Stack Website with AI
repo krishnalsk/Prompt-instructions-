@@ -1,0 +1,447 @@
+# Universal Website Development Prompt — Version 2 (Advanced Full-Stack)
+
+Act as a senior full-stack software engineer, software architect, UI/UX designer, database designer, security engineer, QA tester, and AI integration specialist.
+
+Build a complete, responsive, maintainable application based on the project details below. The result must be a working application, not merely a visual prototype.
+
+## 1. Project Details
+
+- Project Name: [Enter Project Name]
+- Project Category: [Enter Project Category]
+- Project Concept: [Describe the project]
+- Main Objective: [Describe the problem to solve]
+- Target Users: [List user roles]
+- Required Modules: [List modules]
+- AI Features: [List AI modules or state that none are required]
+- External Integrations: [Payments / Email / Maps / Other / None]
+- Preferred Technology: [Enter preferences, if any]
+- Deployment Target: [Vercel / Cloud Provider / Other]
+- Additional Requirements: [Enter constraints]
+
+First analyze the project concept and identify its essential workflows. If important information is missing, explain your assumptions and ask a focused question when necessary.
+
+## 2. Technology Stack
+
+Choose a suitable modern stack and explain why it fits the project.
+
+Suggested stack:
+
+### Frontend
+- React or Next.js.
+- TypeScript.
+- Tailwind CSS.
+- Accessible reusable UI components.
+- Responsive layouts and form validation.
+
+### Backend
+- Node.js with Express, or Next.js server-side routes.
+- REST APIs or another justified API architecture.
+- Server-side validation and business logic.
+- Centralized error handling.
+
+### Database
+Choose PostgreSQL, MySQL, or another appropriate database.
+Use a suitable ORM, such as Prisma, if appropriate.
+
+### Authentication
+Use a proven authentication library or secure server-side session/token approach.
+
+### AI Integration
+Use an appropriate real AI API, hosted model, local model, or traditional machine-learning model based on the project requirements.
+
+### Testing and Deployment
+Use suitable tools for unit tests, integration tests, end-to-end tests, builds, and deployment.
+
+Do not use every suggested technology automatically. Select the smallest reliable stack that meets the requirements.
+
+## 3. Architecture and Planning
+
+Before implementation:
+
+1. Analyze the project objective and business requirements.
+2. Identify all user roles and permissions.
+3. Map the required modules and user journeys.
+4. Design the frontend, backend, and database architecture.
+5. Define the data models and relationships.
+6. Define API endpoints and request/response structures.
+7. Identify authentication, authorization, and security requirements.
+8. Plan error handling, logging, testing, and deployment.
+9. Identify external services, costs, and configuration needs.
+10. Present a concise implementation plan.
+
+Keep the architecture understandable and avoid unnecessary complexity.
+
+## 4. User Interface and Experience
+
+Build a polished, professional, responsive interface.
+
+Requirements:
+
+- Consistent design system, colors, typography, and spacing.
+- Responsive desktop, tablet, and mobile layouts.
+- Accessible forms and interactive components.
+- Clear navigation and breadcrumbs where appropriate.
+- Dashboards, cards, tables, charts, and dialogs where useful.
+- Search, filters, sorting, and pagination where relevant.
+- Loading, success, empty, and error states.
+- Confirmation dialogs for destructive operations.
+- Keyboard accessibility and readable contrast.
+- Clear feedback after user actions.
+
+Use real application data instead of decorative placeholder values wherever practical.
+
+## 5. Application Modules
+
+Implement all modules relevant to the project.
+
+### A. Home and Public Pages
+- Project introduction and key features.
+- Clear calls to action.
+- Public search or browsing when appropriate.
+- Useful help, FAQ, contact, and policy pages as needed.
+
+### B. User Accounts
+- Registration and login.
+- Logout and session management.
+- Profile viewing and editing.
+- Password reset where supported.
+- Email verification where required.
+- Role-based authorization.
+- Account deactivation or deletion where appropriate.
+
+Use secure, server-side authorization. Never rely on hiding frontend buttons as the only permission check.
+
+### C. Core Business Features
+Implement the main workflows defined by the project.
+
+Examples:
+
+- Library: inventory, borrowing, returns, reservations, and fines.
+- Bus booking: routes, schedules, seats, passenger information, bookings, and cancellations.
+- Hotel booking: room inventory, availability, reservations, and cancellations.
+- E-commerce: catalog, inventory, cart, checkout, orders, and returns.
+- College portal: student records, attendance, academic results, and announcements.
+
+Ensure that each module uses validated backend operations and consistent database records.
+
+### D. Admin Dashboard
+Where required, implement:
+
+- Role-restricted administration.
+- User and resource management.
+- Record creation, editing, and deletion.
+- Search, filtering, and pagination.
+- Transaction and activity history.
+- Relevant analytics and reports.
+- CSV or other useful exports.
+- Audit logs for important administrative actions.
+
+Ensure that admin-only APIs enforce permissions on the server.
+
+### E. Notifications and Integrations
+Implement suitable integrations where required:
+
+- Email or SMS notifications.
+- Payment gateways.
+- Maps and location services.
+- File uploads.
+- External APIs.
+- Background jobs or scheduled tasks.
+
+Use sandbox/test mode for payment demonstrations. Handle failed requests, timeouts, retries, and duplicate events safely.
+
+Do not claim an external integration is working until it has been configured and tested.
+
+## 6. Database Design
+
+Design a normalized and maintainable database.
+
+For each entity, specify:
+
+- Table or model name.
+- Fields and data types.
+- Primary keys and foreign keys.
+- Required fields and constraints.
+- Relationships.
+- Indexes where useful.
+- Creation and update timestamps.
+
+Requirements:
+
+- Use database migrations.
+- Enforce important constraints at the database level.
+- Validate data on the server.
+- Use transactions for operations that must succeed or fail together.
+- Prevent duplicate bookings, conflicting reservations, or overselling.
+- Define suitable deletion and retention behavior.
+- Seed the database with safe demonstration data.
+- Keep secrets and database credentials outside source control.
+
+Provide the schema and setup instructions.
+
+## 7. Backend API and Business Logic
+
+Design documented APIs for the main modules.
+
+For each endpoint, specify:
+
+- HTTP method and route.
+- Purpose.
+- Authentication and permission requirements.
+- Request parameters or body.
+- Validation rules.
+- Success response.
+- Error responses.
+
+Implement:
+
+- Proper HTTP status codes.
+- Centralized error handling.
+- Input validation and sanitization where appropriate.
+- Pagination and filtering for large collections.
+- Rate limiting for sensitive or abuse-prone endpoints.
+- Safe database queries.
+- Structured logging without leaking secrets.
+- Consistent business rules.
+
+Never trust client-supplied prices, permissions, booking availability, or other critical values without server-side verification.
+
+## 8. Security and Privacy
+
+Apply security measures appropriate to the application:
+
+- Secure authentication and session management.
+- Server-side authorization for protected resources.
+- Password hashing using a suitable established algorithm or library.
+- Protection against common web vulnerabilities.
+- Safe handling of cookies, CORS, and CSRF where applicable.
+- Rate limiting and abuse prevention.
+- Secrets stored in environment variables or a secrets manager.
+- Validation of file types and uploads.
+- Minimal collection of personal information.
+- Appropriate data retention and deletion.
+- Secure production configuration.
+- Dependency and vulnerability checks.
+
+Do not store plaintext passwords, expose API secrets, or log sensitive user information.
+
+Explain any security risks that remain and what is required before production use.
+
+## 9. AI Module Instructions
+
+If the project includes AI features, design, implement, test, and explain each module.
+
+### A. Analyze the AI Requirement
+
+For every AI module, document:
+
+1. Module name.
+2. User problem it solves.
+3. User inputs.
+4. Expected outputs.
+5. Model or algorithm.
+6. Required data sources.
+7. Backend services and API requirements.
+8. Privacy, security, and performance constraints.
+9. Expected limitations and failure cases.
+
+Use AI only when it provides a meaningful benefit. Ordinary database searches, filters, and business rules should not be mislabeled as AI.
+
+### B. Select the Appropriate AI Level
+
+**Level A — Demonstration**
+
+Use sample inputs and predefined outputs when only a presentation prototype is required. Label the functionality clearly as simulated.
+
+**Level B — Real AI Integration**
+
+Connect a genuine AI model or provider API. Send requests through a secure backend, validate inputs and outputs, handle errors, and configure credentials using environment variables.
+
+**Level C — Advanced AI System**
+
+When justified, implement features such as:
+
+- Retrieval-Augmented Generation (RAG).
+- Semantic search and embeddings.
+- Personalized recommendations.
+- Predictive models.
+- Document analysis.
+- Conversational assistants.
+- AI agents with controlled tool access.
+- Model evaluation and monitoring.
+
+Do not add advanced AI components without a clear use case.
+
+### C. AI Processing Workflow
+
+For every module, explain the complete workflow:
+
+1. The user submits input.
+2. The frontend validates basic fields.
+3. The backend validates permissions and data.
+4. Relevant information is retrieved or prepared.
+5. The model or algorithm processes the request.
+6. The backend validates and handles the result.
+7. The frontend displays the output and any relevant explanation.
+8. Errors, timeouts, and unsupported requests are handled safely.
+
+### D. AI Quality and Safety
+
+- Never expose provider API keys in client-side code.
+- Do not send sensitive information unnecessarily.
+- Validate model output before using it in business operations.
+- Treat AI output as potentially incorrect.
+- Do not allow an AI model to bypass authorization or database rules.
+- Use timeouts, sensible token limits, rate limits, and cost controls.
+- Add retries only where safe.
+- Make it clear when responses are AI-generated.
+- Include fallback behavior when the model is unavailable.
+- Test realistic, invalid, ambiguous, and adversarial inputs.
+- Evaluate output quality using relevant test cases.
+
+For RAG, document the data sources, indexing process, retrieval method, and how the application uses retrieved context.
+
+For predictive models, document the training or inference approach, evaluation metrics, and limitations. Do not invent accuracy or performance figures.
+
+### E. Explain the AI Module
+
+For college demonstrations and documentation, provide:
+
+- A simple overview.
+- A numbered explanation of how it works.
+- An architecture or data-flow diagram where useful.
+- A sample input and output.
+- Technologies used and why.
+- Test cases and observed results.
+- Limitations, costs, and future improvements.
+
+Clearly distinguish real AI, conventional algorithms, and simulated results.
+
+## 10. Testing and Quality Assurance
+
+Create and run appropriate tests.
+
+### Unit Tests
+Test business logic, validation, calculations, and utility functions.
+
+### Integration Tests
+Test APIs, database operations, authentication, permissions, and external-service handling.
+
+### End-to-End Tests
+Test complete user workflows from the interface through the backend.
+
+### Security and Reliability Tests
+Test unauthorized access, invalid inputs, duplicate requests, failed integrations, and relevant abuse cases.
+
+### AI Tests
+Test representative prompts or inputs, output validation, failure handling, and expected behavior.
+
+### Build and Compatibility
+- Run the production build.
+- Run type checks and linting where configured.
+- Test responsive layouts.
+- Fix critical errors before delivery.
+- Report any tests that could not be run.
+
+Do not fabricate test results or claim that the application is production-ready solely because it builds successfully.
+
+## 11. Performance and Reliability
+
+- Optimize database queries and API responses.
+- Avoid unnecessary frontend re-renders and network calls.
+- Use pagination for large data sets.
+- Configure caching only where appropriate.
+- Handle timeouts and temporary service failures.
+- Add logging and health checks where useful.
+- Use background processing for long-running work when justified.
+- Keep configuration separate for development, testing, and production.
+
+## 12. Deployment
+
+Provide deployment instructions for the selected environment.
+
+Include:
+
+- Required software and versions.
+- Installation commands.
+- Environment variable examples without real secrets.
+- Database creation and migration steps.
+- Sample data setup.
+- Development and production commands.
+- Build and deployment steps.
+- Domain, HTTPS, and production configuration guidance where relevant.
+- Logging and troubleshooting instructions.
+- AI provider setup and potential costs, if applicable.
+
+Never include real credentials in the generated code or documentation.
+
+## 13. Documentation
+
+Create a README containing:
+
+- Project overview and objectives.
+- Main features and modules.
+- Technology stack.
+- Architecture overview.
+- Project folder structure.
+- Database schema.
+- API documentation or endpoint summary.
+- Installation and setup instructions.
+- Environment variable reference.
+- Test instructions.
+- Deployment instructions.
+- AI module workflow, if included.
+- Limitations and future enhancements.
+
+Keep documentation consistent with the implementation.
+
+## 14. Development Workflow
+
+Follow this sequence:
+
+1. Analyze the requirements.
+2. Present assumptions and architecture.
+3. Design the database and APIs.
+4. Build the frontend structure.
+5. Implement backend services and authentication.
+6. Implement core business workflows.
+7. Add AI and external integrations where required.
+8. Add validation, error handling, and security controls.
+9. Run tests and fix issues.
+10. Build and verify the application.
+11. Prepare documentation and deployment instructions.
+12. Summarize completed features and known limitations.
+
+If working in an existing project, inspect its structure first and preserve working functionality. Do not overwrite or remove existing features unnecessarily.
+
+## 15. Final Deliverables
+
+Provide:
+
+1. Complete project source code.
+2. Frontend and backend implementation.
+3. Database schema and migrations.
+4. API documentation.
+5. Authentication and authorization implementation.
+6. AI module implementation and explanation, if required.
+7. Sample data and setup instructions.
+8. Automated tests and actual test results.
+9. README and deployment guide.
+10. Environment variable template without secrets.
+11. Known limitations and future improvements.
+12. A final checklist distinguishing completed, simulated, and incomplete features.
+
+If you have access to a coding environment, create the actual project files, install dependencies where permitted, run tests, fix errors, and verify the build.
+
+## 16. Final Quality Requirements
+
+- Deliver a working application, not just a UI mockup.
+- Prioritize correctness, security, usability, and maintainability.
+- Use clear and reusable code.
+- Keep frontend, backend, and data responsibilities separate.
+- Avoid unnecessary frameworks and infrastructure.
+- Do not invent external integrations, test results, or AI capabilities.
+- Explain important technical decisions in simple English.
+- State what still needs configuration or review before production use.
+
+Begin with project analysis and a concise implementation plan. Then build, test, document, and verify the application module by module.
