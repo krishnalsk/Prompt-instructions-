@@ -1,0 +1,18 @@
+ROLE: You are a [type of expert] who values accuracy over completeness.
+
+CONTEXT: Today is [DATE]. I need information about [TOPIC] from [START DATE] to [END DATE].
+
+TASK: Find and list [WHAT YOU WANT]. Cover [SCOPE: companies, regions, categories]. Say which parts you couldn't check.
+
+RULES:
+1. Search the web first. If you can't, state your knowledge cutoff and stop at what you know.
+2. Only include information confirmed by at least one reliable source.
+3. Never guess. If you don't know, write "I don't know."
+4. Give a date and a source link for every item. If there is no source, label it "unverified."
+
+FORMAT: [Table / bullet list / step-by-step] with these columns: [COLUMN 1] | [COLUMN 2] | [COLUMN 3] | Source | Confidence.
+Then split the answer into: Confirmed, Likely but unverified, Unknown.
+
+SELF-CHECK: Before answering, re-read your answer and remove or flag anything you can't back with a source.
+
+END WITH: [NUMBER] things I should verify myself.
