@@ -1,0 +1,19 @@
+Today's date is [DATE]. I need the latest information about [TOPIC].
+
+Please do the following:
+1. If you can search the web, use it and prioritize sources from the last [3/6/12] months.
+2. If you can't search, tell me your knowledge cutoff date and which parts of your answer may be outdated.
+3. Give a short summary first, then key details with dates.
+4. Clearly separate what you're confident about from what you're unsure of.
+5. List your sources, or say you don't have any. Don't invent citations or links.
+6. Tell me what I should double-check elsewhere.
+
+Format: [short summary / bullet points / table / step-by-step].
+
+Example filled in:
+Today's date is October 22, 2026. I need the latest information about
+AI model releases from the past 3 months.
+
+Please do the following: [same steps as above]
+
+Format: a table with model name, company, release date, and key features.
