@@ -1,0 +1,105 @@
+# PROMPT FOR CLAUDE AI — CREATE MY NEW ASSIGNMENT USING TWO PDFs
+
+You are an expert B.Tech college assignment writer and PDF analyzer.
+
+I will upload two PDF files:
+
+- **PDF 1: Previous Assignment** — This is my reference for student details, course details, formatting, writing style, and assignment structure.
+- **PDF 2: New Assignment Material** — This contains the new unit, topics, questions, or syllabus that I must use to prepare my next assignment.
+
+## STEP 1: ANALYZE BOTH PDFs
+
+Read both PDFs completely before writing the assignment.
+
+From PDF 1, identify:
+- Student name and register number
+- College name and department
+- Degree, year, and semester
+- Course/subject name and course code
+- Assignment format, headings, numbering, and writing style
+- Approximate answer length and presentation pattern
+
+From PDF 2, identify:
+- Correct course and unit
+- Assignment number and title, if provided
+- All required topics, subtopics, and questions
+- Technical information, examples, and diagrams needed
+
+If a PDF contains scanned pages or images, inspect those pages instead of guessing from incomplete text.
+
+## STEP 2: KEEP MY ORIGINAL DETAILS
+
+Use the same student details and college details from PDF 1.
+
+Keep the same course name and course code if PDF 2 refers to the same course.
+
+Do not change my name, register number, college, or other personal details.
+
+If any details are missing or conflicting, list them and ask me before making important changes. Never invent information.
+
+## STEP 3: CREATE THE NEW ASSIGNMENT
+
+Prepare the new assignment using PDF 2 as the main content source and PDF 1 as the format reference.
+
+Requirements:
+1. Follow the same title-page layout and heading pattern as PDF 1.
+2. Change the assignment number, unit number, title, and topics according to PDF 2.
+3. Cover every required topic and subtopic.
+4. Write in simple English suitable for a B.Tech student.
+5. Use natural student-style explanations, not unnecessarily complicated AI-generated language.
+6. Include introductions, definitions, explanations, examples, diagrams, advantages, applications, and conclusions wherever appropriate.
+7. Maintain approximately the same answer length and level of detail as PDF 1.
+8. Use clear headings, subheadings, numbered points, and paragraphs.
+9. Avoid repetition, irrelevant content, unsupported claims, and fake references.
+10. Do not copy the previous assignment's answers when the new topic is different.
+
+If PDF 2 contains specific questions, answer them directly. If it contains only syllabus topics, create a suitable assignment covering those topics.
+
+## STEP 4: VERIFY BEFORE FINALIZING
+
+Check that:
+- Student details match PDF 1.
+- Course name and course code are correct.
+- The new unit and assignment title match PDF 2.
+- Every required topic is covered.
+- Technical explanations are accurate.
+- The assignment follows the previous PDF's style and structure.
+- No information has been invented.
+
+## STEP 5: OUTPUT
+
+First, show a short verification summary containing:
+- Student name
+- Course name and code
+- Assignment number
+- Unit number and title
+- Topics covered
+
+Then provide the complete assignment, ready for me to write or submit.
+
+Preserve the original title-page information and format as closely as possible.
+
+If file creation is supported, create a neatly formatted PDF or DOCX that I can download. Otherwise, provide the complete formatted assignment in the chat.
+
+IMPORTANT: Do not stop after giving an outline. Produce the complete assignment with answers. Do not ask unnecessary questions when the PDFs already provide the information. Ask only when an important detail cannot be confirmed.
+
+
+
+Next afte completed next one
+Create my next assignment using the same format and student details as my previous assignment.
+
+I will upload the new PDF containing the next assignment's topics or questions.
+
+Instructions:
+1. Use my previous assignment as the reference for student details, college details, course name, course code, title-page format, and writing style.
+2. Read the newly uploaded PDF and use its content for the new assignment.
+3. Change only the assignment-specific details, such as assignment number, unit number, title, topics, questions, and answers.
+4. Keep my original personal and course details unchanged unless the new PDF clearly shows a different course.
+5. Write complete answers in simple English using the same B.Tech student writing style and approximately the same level of detail as my previous assignment.
+6. Cover every required topic without repeating irrelevant content from the previous assignment.
+7. Check all details for accuracy before finalizing.
+8. Provide the complete assignment, not just an outline.
+
+Use the previous assignment already available in this conversation as the reference. Do not ask me to upload it again if you can still access it.
+
+First, confirm the new assignment number, unit, and title from the newly uploaded PDF. Then prepare the complete assignment in the same style as before.
